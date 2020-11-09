@@ -15,7 +15,7 @@ namespace FunzioneCheConverteNumeri
             fromBase = int.Parse(Console.ReadLine());
             Console.Write("inserisci la base a cui convertire: ");
             toBase = int.Parse(Console.ReadLine());
-            String result = Convert.ToString(Convert.ToInt32(number, fromBase), toBase);
+            String result = Convert.ToString(Convert.ToInt32(number, fromBase), toBase).PadLeft(8, '8');
             Console.WriteLine($"il numero convertito è {result}");
             Console.ReadLine();
         }
